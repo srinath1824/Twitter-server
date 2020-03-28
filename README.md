@@ -1,4 +1,3 @@
 # Twitter-server
-
-run server using 
+Run command: 
 node index.js
