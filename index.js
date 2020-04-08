@@ -32,7 +32,7 @@ if (app.get("env") === "development") {
   console.log("Morgan enabled");
 }
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
   res.header(
     "Access-Control-Allow-Headers",
@@ -42,7 +42,7 @@ app.use(function(req, res, next) {
 });
 
 app.use("/api/auth", auth);
-app.use(authMiddleware);
+// app.use(authMiddleware);
 app.use("/api/posts", posts);
 
 app.listen(port, () => {
